@@ -1,8 +1,12 @@
 function AlgoCard(props) {
     return (
-      <div>
-        
-      </div>
+        <>
+        <div>
+            <h4>{props.name}</h4>
+            <p>{props.info}</p>
+            <img src="" alt="" />
+        </div>
+        </>
     );
   }
   
