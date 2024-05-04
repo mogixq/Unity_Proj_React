@@ -1,11 +1,10 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import Algorithms from "./Algorithms";
+import { Routes, Route, Link } from "react-router-dom";
+import Items from "./Items";
+import Index from "./Index";
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <>
@@ -18,14 +17,19 @@ function App() {
           maxWidth: 444,
         }}
       >
-        <h2>Welcome to the Unity-Algorithm-Game wiki!</h2>
-        <div className="card">
-          <p>
-            In this wikipedia of the Computer Science project you can read about
-            the algorithms, items, and monsters in the game
-          </p>
+        <div>
+          <Link to="/">Home</Link> |
+          <Link to="/algos">Algos</Link> |
+          <Link to="/items">Items</Link>
         </div>
-        <Algorithms />
+
+        <div>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/algos" element={<Algorithms />} />
+            <Route path="/items" element={<Items />} />
+          </Routes>
+        </div>
       </div>
     </>
   );
