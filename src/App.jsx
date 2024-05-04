@@ -14,13 +14,13 @@ function App() {
         margin: 10,
         padding: 10,
         borderRadius: 10,
-        maxWidth:444
+        maxWidth:444,
+        direction: 'rtl'
       }}>
-      <h2>Welcome to the Unity-Algorithm-Game wiki!</h2>
+      <h2>ברוכים הבאים לויקיפדיה של Unity-Algorithm-Game! </h2>
       <div className="card">
         <p>
-          In this wikipedia of the Computer Science project you can read about the Algorithms, Monsters, and Items 
-          that are featured in the game.
+          בויקיפדיה הזו ניתן לקרוא על האלגוריתמים, מפלצות, וחפצים המופיעים במשחק
         </p>
       </div>
       <Algorithms />

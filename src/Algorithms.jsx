@@ -4,11 +4,12 @@ function Algorithms() {
   return (
     <>
     <div>
-      <h3>Algorithms</h3>
-      <p>The main algorithms used in the game</p>
+      <h3>אלגוריתמים</h3>
+      <p>האלגוריתמים הראשיים הנמצאים כרגע במשחק</p>
     </div>
     <div>
         <h4>Binary Space partitioning</h4>
+        
     </div>
     </>
   );
