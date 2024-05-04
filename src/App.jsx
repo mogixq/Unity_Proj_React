@@ -2,7 +2,6 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Algorithms from './Algorithms'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,18 +13,18 @@ function App() {
         margin: 10,
         padding: 10,
         borderRadius: 10,
-        maxWidth:444,
-        direction: 'rtl'
+        maxWidth:444
       }}>
-      <h2>ברוכים הבאים לויקיפדיה של Unity-Algorithm-Game! </h2>
+      <h2>Welcome to the Unity-Algorithm-Game wiki!</h2>
       <div className="card">
         <p>
-          בויקיפדיה הזו ניתן לקרוא על האלגוריתמים, מפלצות, וחפצים המופיעים במשחק
+          In this wikipedia of the Computer Science project you can read about the 
         </p>
       </div>
-      <Algorithms />
+      <p className="read-the-docs">
+        Click on the Vite and React logos to learn more
+      </p>
       </div>
-      
     </>
   )
 }
