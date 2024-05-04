@@ -4,14 +4,19 @@ import AlgoCard from "./AlgoCard";
 function Algorithms() {
   const BSP_Info =
     "The algorithm is used to create the game map in a procedural way, the map starts as one large space, and the algorithm divides it into two parts, then the algorithm divides each created space into two until each space reaches the minimum allowed size, and this is how the division ends. From the spaces created we create the rooms that make up the game map.";
-
+  const BSP_Img = `.\\images\\BSP_Img.png`
+  
+  const AStar_Info = "A* is a search algorithm, one of the navigation algorithms in the game. Used to find a shortest path from a starting point to a single destination point, in a pseudo-greedy form using a heuristic function that directs it to the ending point. A heuristic is a function used to estimate the remaining cost to the destination. An efficient function will allow A* to find the shortest path efficiently. The complexity of the algorithm in the worst case is (O)|E|log|V|. We chose it because with the help of a good heuristic function of calculating the distance to the target point, the algorithm can significantly improve running times. It is possible to look at the A* algorithm as an extension of Dijkstra with heuristics (in Dijkstra the heuristic function will always be equal to 0)."
+  const AStar_Img = `.\\images\\AStar_Img.png`
   return (
     <>
       <div>
         <h3>Algorithms</h3>
         <p>The main algorithms used in the game</p>
       </div>
-      <AlgoCard name ='Binary Space Partitioning' info ={BSP_Info}/>
+      <AlgoCard name ='Binary Space Partitioning' info ={BSP_Info} ImgSrc={BSP_Img}/>
+      <AlgoCard name ='A*' info ={AStar_Info} ImgSrc={AStar_Img}/>
+      <AlgoCard name ='Binary Space Partitioning' info ={BSP_Info} ImgSrc={BSP_Img}/>
     </>
   );
 }
