@@ -12,6 +12,7 @@ function ItemCard(props) {
         }}
       >
         <h4>{props.name}</h4>
+        <p>Rarity: {props.rarity}</p>
         <img
           src={props.ImgSrc}
           alt="img couldnt show"
