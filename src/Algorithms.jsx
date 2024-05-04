@@ -16,7 +16,7 @@ function Algorithms() {
   return (
     <>
       <div>
-        <h3>Algorithms</h3>
+        <h2>Algorithms</h2>
         <p>The main algorithms used in the game</p>
       </div>
       <AlgoCard name ='Binary Space Partitioning' info ={BSP_Info} ImgSrc={BSP_Img}/>
