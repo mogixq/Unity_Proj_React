@@ -3,6 +3,7 @@ import Algorithms from "./Algorithms";
 import { Routes, Route, Link } from "react-router-dom";
 import Items from "./Items";
 import Index from "./Index";
+import Monsters from "./Monsters";
 
 function App() {
 
@@ -18,9 +19,10 @@ function App() {
         }}
       >
         <div>
-          <Link to="/">Home</Link> |
-          <Link to="/algos">Algos</Link> |
-          <Link to="/items">Items</Link>
+          <Link to="/"> Home</Link> |
+          <Link to="/algos"> Algorithms</Link> |
+          <Link to="/items"> Items</Link> |
+          <Link to="/monsters"> Monsters</Link>
         </div>
 
         <div>
@@ -28,6 +30,7 @@ function App() {
             <Route path="/" element={<Index />} />
             <Route path="/algos" element={<Algorithms />} />
             <Route path="/items" element={<Items />} />
+            <Route path="/monsters" element={<Monsters />} />
           </Routes>
         </div>
       </div>

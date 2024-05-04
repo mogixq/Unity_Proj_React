@@ -1,7 +1,14 @@
 function AlgoCard(props) {
   return (
     <>
-      <div>
+      <div
+        style={{
+          border: "solid lightblue 2px",
+          margin: 10,
+          padding: 10,
+          borderRadius: 10,
+        }}
+      >
         <h4>{props.name}</h4>
         <img
           src={props.ImgSrc}
@@ -9,7 +16,6 @@ function AlgoCard(props) {
           style={{ width: "250px", height: "150px" }}
         />
         <p>{props.info}</p>
-        
       </div>
     </>
   );
