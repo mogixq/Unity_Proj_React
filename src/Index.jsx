@@ -20,6 +20,9 @@ function Index() {
           In this wikipedia of the Computer Science project you can read about
           the algorithms, items, and monsters in the game
         </p>
+        <p>
+          this is a Roguelike game, made in the unity engine in C#.
+        </p>
       </div>
     </div>
   );

@@ -33,6 +33,13 @@ function App() {
             <Route path="/monsters" element={<Monsters />} />
           </Routes>
         </div>
+        <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       </div>
     </>
   );

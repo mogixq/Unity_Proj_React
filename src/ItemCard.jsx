@@ -5,14 +5,16 @@ function ItemCard(props) {
     <>
       <div
         style={{
-          border: "solid purple 2px",
+          border: `solid ${props.RarColor} 2px`,
           margin: 10,
           padding: 10,
           borderRadius: 10,
         }}
       >
         <h4>{props.name}</h4>
-        <p>Rarity: {props.rarity}</p>
+        <p style={{
+            color: `${props.RarColor}`
+        }}>Rarity: {props.rarity}</p>
         <img
           src={props.ImgSrc}
           alt="img couldnt show"
