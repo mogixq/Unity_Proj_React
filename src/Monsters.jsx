@@ -2,8 +2,7 @@ import React from "react";
 import MonsCard from "./MonsCard";
 
 function Monsters() {
-  const Gob_Desc =
-    "This is a Health Potion, it heals the player's health points after he has taken damage from monsters or the environment.";
+  const Gob_Desc ="The goblin is a short ranged mob, it attacks at melee distance when the player gets near enough, keep your distance and you should be safe.";
   const Gob_Img = `.\\images\\HP.png`;
 
   return (
