@@ -1,7 +1,7 @@
 import React from "react";
 import MonsCard from "./MonsCard";
 
-function Monsters() {
+function Monsters(props) {
   const Gob_Desc ="The goblin is a short ranged mob, it attacks at melee distance when the player gets near enough, keep your distance and you should be safe.";
   const Gob_Img = `.\\images\\Goblin.png`;
   const Gob_HP = '3';
@@ -16,6 +16,7 @@ function Monsters() {
 
   return (
     <>
+      <button onClick={() => props.changeDarkMode()}>Dark mode on/off</button>  
       <h2>Monsters</h2>
       <p>The foes that can be encountered in the game world</p>
       <MonsCard

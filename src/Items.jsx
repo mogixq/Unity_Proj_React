@@ -1,7 +1,7 @@
 import React from 'react'
 import ItemCard from './ItemCard'
 
-function Items() {
+function Items(props) {
 
     const HP_Desc = "This is a Health Potion, it heals the player's health points after he has taken damage from monsters or the environment."
     const HP_Img = `.\\images\\HP.png`
@@ -17,6 +17,7 @@ function Items() {
 
   return (
     <>
+    <button onClick={() => props.changeDarkMode()}>Dark mode on/off</button>
     <h2>Items</h2>
     <ItemCard name ='HP Potion' info ={HP_Desc} ImgSrc={HP_Img} rarity ='Common' RarColor ='green'/>
     <ItemCard name ='MP Potion' info ={MP_Desc} ImgSrc={MP_Img} rarity ='Common' RarColor='green'/>

@@ -1,8 +1,9 @@
 import React from "react";
 
-function Index() {
+function Index(props) {
   return (
     <div>
+      <button onClick={()=>props.changeDarkMode()}>Dark mode on/off</button>
       <div
         style={{
           backgroundImage: `url(./images/Wiki_Logo.png)`,

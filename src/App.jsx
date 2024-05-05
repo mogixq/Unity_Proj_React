@@ -40,15 +40,13 @@ function App() {
           <Link to="/items"> Items</Link> |
           <Link to="/monsters"> Monsters</Link>
         </div>
-        <button onClick={changeDarkMode}>Dark mode on/off</button>
-        {/* backgroundColor:'grey' */}
 
         <div>
           <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/algos" element={<Algorithms />} />
-            <Route path="/items" element={<Items />} />
-            <Route path="/monsters" element={<Monsters />} />
+            <Route path="/" element={<Index changeDarkMode ={changeDarkMode} />} />
+            <Route path="/algos" element={<Algorithms changeDarkMode ={changeDarkMode} />} />
+            <Route path="/items" element={<Items changeDarkMode ={changeDarkMode} />} />
+            <Route path="/monsters" element={<Monsters changeDarkMode ={changeDarkMode} />} />
           </Routes>
         </div>
         <br />
