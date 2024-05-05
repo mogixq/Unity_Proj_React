@@ -24,6 +24,8 @@ function App() {
           <Link to="/items"> Items</Link> |
           <Link to="/monsters"> Monsters</Link>
         </div>
+        <button>Dark mode on/off</button>
+        {/* backgroundColor:'grey' */}
 
         <div>
           <Routes>
@@ -34,12 +36,6 @@ function App() {
           </Routes>
         </div>
         <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
       </div>
     </>
   );
