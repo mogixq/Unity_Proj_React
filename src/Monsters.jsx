@@ -8,6 +8,12 @@ function Monsters() {
   const Gob_AR = 'close';
   const Gob_Danger = 'mild';
 
+  const OrcM_Desc ="The Orc Mage is a long ranged mob, it attacks from a distance using a ranged spell attack, get behind cover to block the spells.";
+  const OrcM_Img = `.\\images\\OrcMage.png`;
+  const OrcM_HP = '5';
+  const OrcM_AR = 'far';
+  const OrcM_Danger = 'medium';
+
   return (
     <>
       <h2>Monsters</h2>
@@ -20,7 +26,16 @@ function Monsters() {
         AttaRang={Gob_AR}
         danger={Gob_Danger}
       />
+      <MonsCard
+        name="Orc Mage"
+        info={OrcM_Desc}
+        ImgSrc={OrcM_Img}
+        HP ={OrcM_HP}
+        AttaRang={OrcM_AR}
+        danger={OrcM_Danger}
+      />
     </>
+    
   );
 }
 
