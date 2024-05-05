@@ -10,7 +10,7 @@ function Index() {
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           height: "150px",
-          borderRadius:20
+          borderRadius: 20,
         }}
       >
         <h1 style={{ color: "white", textShadow: "0 0 5px blue" }}>
@@ -21,13 +21,23 @@ function Index() {
           Welcome to the Unity-Algorithm-Game wiki!
         </h3>
       </div>
-      <div className="card">
+      <div
+        style={{
+          border: "2px solid rgb(30, 144, 255)",
+          margin: 10,
+          padding:10,
+          borderRadius:10,
+        }}
+      >
         <p>
           In this wikipedia of the Computer Science project you can read about
-          the algorithms, items, and monsters in the game. Use the menu at the top to navigate the pages.
+          the algorithms, items, and monsters in the game. Use the menu at the
+          top to navigate the pages.
         </p>
-        <p>This is a Roguelike game, made in the unity engine in C#. 
-          The game was made by Almog, Philip & Moshe, it is currently work in progress and more is to be added to the game.
+        <p>
+          This is a Roguelike game, made in the unity engine in C#. The game was
+          made by Almog, Philip & Moshe, it is currently work in progress and
+          more is to be added to the game.
         </p>
       </div>
       <br />

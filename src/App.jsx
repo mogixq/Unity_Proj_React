@@ -9,17 +9,17 @@ import Monsters from "./Monsters";
 
 function App() {
 
-  const [darkMode, setDarkMode] = useState(false);
+  const [backgroundColor, setBackgroundColor] = useState('white');
 
   const changeDarkMode = ()=>{
-    if (!darkMode) {
-      setDarkMode(true);
-    } else setDarkMode(false);
+    if (backgroundColor == 'white') {
+      setBackgroundColor('grey');
+    } else setBackgroundColor('white');
   }
 
   useEffect(() => {
-    console.log(darkMode);
-  }, [darkMode])
+    console.log('changed background color',backgroundColor);
+  }, [backgroundColor])
   
 
   return (
@@ -31,6 +31,7 @@ function App() {
           padding: 10,
           borderRadius: 10,
           maxWidth: 444,
+          backgroundColor: backgroundColor
         }}
       >
         <div>
