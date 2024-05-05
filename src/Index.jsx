@@ -30,6 +30,7 @@ function Index() {
           The game was made by Almog, Philip & Moshe, it is currently work in progress and more is to be added to the game.
         </p>
       </div>
+      <br />
       <div>
         <img
           src=".\\images\\UnityLogo.png"

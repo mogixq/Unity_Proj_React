@@ -1,11 +1,26 @@
 import "./App.css";
-import Algorithms from "./Algorithms";
 import { Routes, Route, Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import Algorithms from "./Algorithms";
 import Items from "./Items";
 import Index from "./Index";
 import Monsters from "./Monsters";
 
+
 function App() {
+
+  const [darkMode, setDarkMode] = useState(false);
+
+  const changeDarkMode = ()=>{
+    if (!darkMode) {
+      setDarkMode(true);
+    } else setDarkMode(false);
+  }
+
+  useEffect(() => {
+    console.log(darkMode);
+  }, [darkMode])
+  
 
   return (
     <>
@@ -24,7 +39,7 @@ function App() {
           <Link to="/items"> Items</Link> |
           <Link to="/monsters"> Monsters</Link>
         </div>
-        <button>Dark mode on/off</button>
+        <button onClick={changeDarkMode}>Dark mode on/off</button>
         {/* backgroundColor:'grey' */}
 
         <div>

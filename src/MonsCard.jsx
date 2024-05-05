@@ -25,7 +25,7 @@ function MonsCard(props) {
               float: "right",
             }}
           />
-          <table
+          <table 
             style={{
               minHeight: 80,
               minWidth: 230
