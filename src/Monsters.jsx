@@ -34,6 +34,7 @@ function Monsters() {
         AttaRang={OrcM_AR}
         danger={OrcM_Danger}
       />
+      <button onClick={() => window.scrollTo(0, 0)}>Scroll to top</button>
     </>
     
   );
