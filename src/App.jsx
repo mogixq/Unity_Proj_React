@@ -6,30 +6,26 @@ import Items from "./Items";
 import Index from "./Index";
 import Monsters from "./Monsters";
 
-
 function App() {
-
-  const [darkmode, setDarkmode] = useState(true);
-  const [backgroundColor, setBackgroundColor] = useState('white');
-  const [color, setColor] = useState('black');
-
-  const changeDarkMode = ()=>{
+  const [darkmode, setDarkmode] = useState(false);
+  const [backgroundColor, setBackgroundColor] = useState("white");
+  const [color, setColor] = useState("black");
+  
+  const changeDarkMode = () => {
     if (darkmode) {
       setDarkmode(false);
-      setBackgroundColor('grey');
-      setColor('white');
+      setBackgroundColor("white");
+      setColor("black");
     } else {
       setDarkmode(true);
-      setBackgroundColor('white');
-      setColor('black');
+      setBackgroundColor("grey");
+      setColor("white");
     }
-
-  }
+  };
 
   useEffect(() => {
-    console.log('dark mode ',darkmode);
-  }, [darkmode])
-  
+    console.log("dark mode ", darkmode);
+  }, [darkmode]);
 
   return (
     <>
@@ -41,22 +37,32 @@ function App() {
           borderRadius: 10,
           maxWidth: 444,
           backgroundColor: backgroundColor,
-          color:color
+          color: color,
         }}
       >
         <div>
-          <Link to="/"> Home</Link> |
-          <Link to="/algos"> Algorithms</Link> |
-          <Link to="/items"> Items</Link> |
-          <Link to="/monsters"> Monsters</Link>
+          <Link to="/"> Home</Link> |<Link to="/algos"> Algorithms</Link> |
+          <Link to="/items"> Items</Link> |<Link to="/monsters"> Monsters</Link>
         </div>
 
         <div>
           <Routes>
-            <Route path="/" element={<Index changeDarkMode ={changeDarkMode} />} />
-            <Route path="/algos" element={<Algorithms changeDarkMode ={changeDarkMode} />} />
-            <Route path="/items" element={<Items changeDarkMode ={changeDarkMode} />} />
-            <Route path="/monsters" element={<Monsters changeDarkMode ={changeDarkMode} />} />
+            <Route
+              path="/"
+              element={<Index changeDarkMode={changeDarkMode} />}
+            />
+            <Route
+              path="/algos"
+              element={<Algorithms changeDarkMode={changeDarkMode} />}
+            />
+            <Route
+              path="/items"
+              element={<Items changeDarkMode={changeDarkMode} />}
+            />
+            <Route
+              path="/monsters"
+              element={<Monsters changeDarkMode={changeDarkMode} />}
+            />
           </Routes>
         </div>
         <br />
