@@ -23,6 +23,7 @@ function ItemCard(props) {
             height: "90px",
             marginRight: 10,
             float: "left",
+            borderRadius: 10
           }}
         />
         <p>{props.info}</p>

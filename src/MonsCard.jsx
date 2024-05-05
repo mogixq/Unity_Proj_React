@@ -20,23 +20,31 @@ function MonsCard(props) {
             style={{
               width: "100x",
               height: "100px",
-              marginRight: 50,
+              marginRight: 30,
+              borderRadius: 10,
               float: "right",
             }}
           />
-          <table style={{
-            borderBlock:"solid black 2px",
-          }}>
-            <tr>
-              <th>HP</th>
-              <th>Attack Range</th>
-              <th>Danger</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>close</td>
-                <td>mildly</td>
-            </tr>
+          <table
+            style={{
+              minHeight: 80,
+              minWidth: 230
+            }}
+          >
+            <thead>
+              <tr>
+                <th>HP</th>
+                <th>Attack Range</th>
+                <th>Danger</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{props.HP}</td>
+                <td>{props.AttaRang}</td>
+                <td>{props.danger}</td>
+              </tr>
+            </tbody>
           </table>
           <br />
         </div>
