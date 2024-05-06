@@ -22,8 +22,9 @@ function Photos(props) {
   return (
     <div>
       <button onClick={handlePrev}>Previous</button>
+      <button onClick={handleNext}>Next</button> <br />
       <img src={photos[currentIndex]} alt={`Photo ${currentIndex}`} />
-      <button onClick={handleNext}>Next</button>
+      
     </div>
   );
 }

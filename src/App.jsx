@@ -43,7 +43,8 @@ function App() {
       >
         <div>
           <Link to="/"> Home</Link> |<Link to="/algos"> Algorithms</Link> |
-          <Link to="/items"> Items</Link> |<Link to="/monsters"> Monsters</Link>
+          <Link to="/items"> Items</Link> |<Link to="/monsters"> Monsters</Link> |
+          <Link to="/photos"> Photos</Link> 
         </div>
 
         <div>
@@ -64,10 +65,13 @@ function App() {
               path="/monsters"
               element={<Monsters changeDarkMode={changeDarkMode} />}
             />
+            <Route
+              path="/photos"
+              element={<Photos changeDarkMode={changeDarkMode} />}
+            />
           </Routes>
         </div>
         <br />
-        <Photos />
       </div>
     </>
   );
