@@ -16,6 +16,10 @@ function AlgoCard(props) {
           style={{ width: "250px", height: "150px" }}
         />
         <p>{props.info}</p>
+        <br />
+        <h5>more infomation in external links</h5>
+        <a href={props.LinkWiki} target="_blank">Visit Wikipedia   </a>
+        <a href={props.LinkG4G} target="_blank" style={{color:'green'}}>Visit Geeks 4 Geeks</a>
       </div>
     </>
   );
