@@ -4,9 +4,14 @@ function Photos(props) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const photos = [
+    ".\\images\\5.png",
+    ".\\images\\4.png",
+    ".\\images\\6.png",
+    ".\\images\\7.png",
     ".\\images\\3.png",
     ".\\images\\2.png",
     ".\\images\\1.png",
+    
   ];
 
   const handleNext = () => {
@@ -20,7 +25,7 @@ function Photos(props) {
   };
 
   return (
-    <div>
+    <div style={{minWidth:444}}>
       <button onClick={() => props.changeDarkMode()}>Dark mode on/off</button> <br />
       <h2>Photo Gallery</h2>
       <p>View photos from the game and it's development</p> <br />
@@ -32,15 +37,17 @@ function Photos(props) {
           borderRadius: 10,
           maxWidth: 400,
           maxHeight: 250,
-          padding:5
+          padding:5,
+          margin:'auto'
         }}
       >
         <img
           src={photos[currentIndex]}
           alt={`Photo ${currentIndex}`}
-          style={{ borderRadius: 10,maxWidth:350,maxHeight:200 }}
+          style={{ borderRadius: 10,width:400,height:250 }}
         />
       </div>
+      <p style={{color:'purple',fontWeight:'bold'}}>{currentIndex+1}/{photos.length}</p>
     </div>
   );
 }
