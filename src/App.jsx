@@ -5,6 +5,7 @@ import Algorithms from "./Algorithms";
 import Items from "./Items";
 import Index from "./Index";
 import Monsters from "./Monsters";
+import Photos from "./Photos";
 
 function App() {
   const [darkmode, setDarkmode] = useState(false);
@@ -66,6 +67,7 @@ function App() {
           </Routes>
         </div>
         <br />
+        <Photos />
       </div>
     </>
   );
